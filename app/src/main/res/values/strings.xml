@@ -16,4 +16,11 @@
     <string name="tap_to_continue">tap to continue.....</string>
     <string name="submit">Submit</string>
     <string name="enter_no">Enter No</string>
+    <string name="_4_than_the_no_you_have_to_guess">4. Than the no you have to guess..</string>
+    <string name="instructions">Instructions:</string>
+    <string name="start_game">Start Game</string>
+    <string name="_2_you_have_to_guess_that_no">2. You have to Guess that no..</string>
+    <string name="_1_there_is_a_random_no_between_1_to_100">1. There is a random no between 1 to 100</string>
+    <string name="_3_it_shows_entered_no_is_big_or_small">3. It shows entered no is big or small</string>
+    <string name="congratulations">Congratulations..</string>
 </resources>

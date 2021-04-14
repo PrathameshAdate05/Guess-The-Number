@@ -10,8 +10,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
+import android.widget.EditText;
 
 public class StartGame extends AppCompatActivity {
+
+    EditText name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,10 +23,18 @@ public class StartGame extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        name=findViewById(R.id.name);
+
 
     }
     public void startgame(View view){
-        Intent intent=new Intent(StartGame.this,MainGame.class);
-        startActivity(intent);
+        if(name.getText().toString().equals("")){
+            name.setError("Enter name Please..");
+        }
+        else {
+            Intent intent = new Intent(StartGame.this, MainGame.class);
+            intent.putExtra("name",name.getText().toString());
+            startActivity(intent);
+        }
     }
 }

@@ -43,19 +43,22 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="224dp"
         android:fontFamily="@font/andika"
-        android:text="4. Than the no you have to guess.."
+        android:gravity="start"
+        android:text="@string/_4_than_the_no_you_have_to_guess"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.312"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/instruction" />
+        app:layout_constraintTop_toBottomOf="@+id/instruction"
+        android:textAlignment="textStart"/>
 
     <TextView
         android:id="@+id/instruction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/andika"
-        android:text="Instructions:"
+        android:gravity="start"
+        android:text="@string/instructions"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -63,7 +66,8 @@
         app:layout_constraintHorizontal_bias="0.099"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.11" />
+        app:layout_constraintVertical_bias="0.11"
+        android:textAlignment="textStart"/>
 
     <TextView
         android:id="@+id/inst1"
@@ -71,12 +75,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/andika"
-        android:text="1. There is a random no between 1 to 100"
+        android:gravity="start"
+        android:text="@string/_1_there_is_a_random_no_between_1_to_100"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/instruction" />
+        app:layout_constraintTop_toBottomOf="@+id/instruction"
+        android:textAlignment="textStart"/>
 
     <TextView
         android:id="@+id/inst2"
@@ -84,12 +90,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="88dp"
         android:fontFamily="@font/andika"
-        android:text="2. You have to Guess that no.."
+        android:gravity="start"
+        android:text="@string/_2_you_have_to_guess_that_no"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.246"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/instruction" />
+        app:layout_constraintTop_toBottomOf="@+id/instruction"
+        android:textAlignment="textStart"/>
 
     <TextView
         android:id="@+id/inst3"
@@ -97,12 +105,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="156dp"
         android:fontFamily="@font/andika"
-        android:text="3. It shows entered no is big or small"
+        android:gravity="start"
+        android:text="@string/_3_it_shows_entered_no_is_big_or_small"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.38"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/instruction" />
+        app:layout_constraintTop_toBottomOf="@+id/instruction"
+        android:textAlignment="textStart"/>
 
     <Button
         android:id="@+id/startbtn"
@@ -110,13 +120,30 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/aladin"
         android:onClick="startgame"
-        android:text="Start Game"
+        android:text="@string/start_game"
         android:textSize="30sp"
         app:cornerRadius="13dp"
         app:layout_constraintBottom_toBottomOf="@+id/include"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.755" />
+        app:layout_constraintVertical_bias="0.793" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/andika"
+        android:gravity="center_horizontal"
+        android:hint="Enter name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/startbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inst4"
+        app:layout_constraintVertical_bias="0.448" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

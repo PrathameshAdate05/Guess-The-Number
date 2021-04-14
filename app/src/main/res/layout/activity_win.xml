@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-67dp" />
+        tools:layout_editor_absoluteY="16dp" />
 
     <TextView
         android:id="@+id/wintext"
@@ -23,10 +23,40 @@
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/konfettiView"
-        app:layout_constraintVertical_bias="0.317" />
+        app:layout_constraintVertical_bias="0.382" />
+
+    <TextView
+        android:id="@+id/congrats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cherry_swash"
+        android:gravity="center"
+        android:text="@string/congratulations"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/konfettiView"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <TextView
+        android:id="@+id/nameuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cherry_swash"
+        android:gravity="center"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/konfettiView"
+        app:layout_constraintVertical_bias="0.191"
+        android:textAlignment="center"/>
 
     <TextView
         android:id="@+id/Score"

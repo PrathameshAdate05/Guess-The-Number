@@ -22,6 +22,9 @@ public class MainGame extends AppCompatActivity {
     Random random;
     TextView action;
     private int guess, ori, count = 0;
+    Intent intent;
+    String name,strcount;
+    Bundle bundle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +32,12 @@ public class MainGame extends AppCompatActivity {
         setContentView(R.layout.activity_main_game);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        intent = new Intent(MainGame.this, Win.class);
+        Intent intent2=new Intent();
+        intent2=getIntent();
+        name=intent2.getStringExtra("name");
+
+        bundle=new Bundle();
 
         random = new Random();
         input = (EditText) findViewById(R.id.number);
@@ -45,9 +54,12 @@ public class MainGame extends AppCompatActivity {
             count++;
             action.setText("Guessed the number ");
             //Toast.makeText(this, ""+count, Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(MainGame.this, Win.class);
-            String strcount = String.valueOf(count);
-            intent.putExtra(Win.COUNT_EXTRA, strcount);
+
+             strcount = String.valueOf(count);
+//            intent.putExtra(Win.COUNT_EXTRA, strcount);
+            bundle.putString("name",name);
+            bundle.putString("count",strcount);
+            intent.putExtras(bundle);
             startActivity(intent);
         } else if (ori > guess) {
             count++;
